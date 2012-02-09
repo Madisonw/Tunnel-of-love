@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>JS1k, 1k demo submission [ID]</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+		<script>
+			var b = document.body;
+			var c = document.getElementsByTagName('canvas')[0];
+			var a = c.getContext('2d');
+			document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+		</script>
+		<script>
+// start of submission //
+(function(){function w(a,c){d.beginPath();d.lineWidth=2;d.strokeStyle="red";d.arc(a,c,30,0,r,true);d.stroke();if(n[a]){if(c>n[a][0]&&c<n[a][1]){t();l+=p;p-=25;n=[];n.length=h;q+=100}}q++;u();e=setTimeout(function(){b.x=a;b.y=c;d.strokeStyle="blue";d.clearRect(a,c,10,10);d.beginPath();d.arc(a,c,20,0,r,true);d.stroke();l-=o()*5},l);if(l<1)alert("Score: "+q+"!"),j=0}function v(){if(!j){setTimeout(v,m);return}m+=20;var a=Math.floor(o()*h);y=Math.floor(o()*k);x_r=a+g,i=0;d.font="62px a";d.fillStyle="white";d.fillText(f,a,y);d.fillStyle="red";d.font="56px a";d.fillText(f,a+1.5,y-2);y-=50;while(a<x_r){n[a]=[y,y+70];a++}setTimeout(v,m)}function u(){d.fillStyle="black";d.fillRect(0,0,200,50);d.fillStyle="white";d.font="24px a",d.fillText("score: "+q,10,30)}function t(){d.fillStyle="black";d.fillRect(0,0,h,k)}var b={x:0,y:0},d=a,e,f="♥",g=45,h=1400,j=1,k=780,l=1e3,m=2e3,n=[],o=Math.random,p=800,q=0,r=Math.PI*2,s=12;n.length=h;c.width=h;c.height=k;c.onmousemove=function(a){if(j)w(a.pageX,a.pageY)};t();v()})()
+// end of submission //
+		</script>
+	</body>
+</html>
